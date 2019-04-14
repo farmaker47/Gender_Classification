@@ -323,7 +323,6 @@ public abstract class Classifier {
     private void recreateInterpreter() {
         if (tflite != null) {
             tflite.close();
-            // TODO(b/120679982)
             // gpuDelegate.close();
             tflite = new Interpreter(tfliteModel, tfliteOptions);
         }

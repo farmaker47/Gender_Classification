@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
         Bitmap bitmapConvert = Bitmap.createScaledBitmap(bitmap, INPUT_SIZE, INPUT_SIZE, false);
         final List<Classifier.Recognition> results = classifier.recognizeImage(bitmapConvert);
 
-
         //Show results
         showResultsInBottomSheet(results);
     }
